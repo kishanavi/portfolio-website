@@ -131,8 +131,8 @@ window.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
       window.removeEventListener('resize', handleResize);
-      canvas.removeEventListener('mousemove', handleMouseMove);
-      canvas.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseleave', handleMouseLeave);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
@@ -140,7 +140,7 @@ window.addEventListener('mouseleave', handleMouseLeave);
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full pointer-events-auto"
+      className="absolute inset-0 w-full h-full pointer-events-none"
     />
   );
 }
