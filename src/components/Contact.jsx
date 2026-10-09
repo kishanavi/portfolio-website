@@ -65,34 +65,34 @@ export default function Contact() {
 
   return (
 <section 
-      id="contact" 
-      className="relative bg-[#050c08] text-white pt-32 pb-24 px-6 sm:px-12 lg:px-16 overflow-hidden min-h-screen"
-    >
+  id="contact" 
+  className="relative z-20 bg-[#050c08] text-white pt-32 pb-24 px-6 sm:px-12 lg:px-16 overflow-hidden min-h-screen"
+>
       {/* Background Emerald Ambient Glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/10 blur-[130px] rounded-full pointer-events-none"></div>
 
-      {/* Top Header with Watermark Text */}
-   <div className="relative flex flex-col items-center justify-center mb-10 text-center">
-  {/* Background Outline Text (Small Size) */}
-  <h2 
-    className="text-4xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-widest select-none opacity-25"
-    style={{
-      WebkitTextStroke: '1.5px #34d399',
-      color: 'transparent'
-    }}
-  >
-   CONTACT
-  </h2>
+                {/* Top Header with Watermark Text */}
+            <div className="relative flex flex-col items-center justify-center mb-10 text-center">
+            {/* Background Outline Text (Small Size) */}
+            <h2 
+                className="text-4xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-widest select-none opacity-25"
+                style={{
+                WebkitTextStroke: '1.5px #34d399',
+                color: 'transparent'
+                }}
+            >
+            CONTACT
+            </h2>
 
-  {/* Foreground Subtitle */}
-  <div className="absolute flex items-center justify-center gap-2">
-    <span className="w-5 sm:w-8 h-[2px] bg-emerald-400"></span>
-    <h3 className="text-lg sm:text-xl font-bold text-white tracking-wide">
-      Get In Touch
-    </h3>
-    <span className="w-5 sm:w-8 h-[2px] bg-emerald-400"></span>
-  </div>
-</div>
+            {/* Foreground Subtitle */}
+            <div className="absolute flex items-center justify-center gap-2">
+                <span className="w-5 sm:w-8 h-[2px] bg-emerald-400"></span>
+                <h3 className="text-lg sm:text-xl font-bold text-white tracking-wide">
+                Get In Touch
+                </h3>
+                <span className="w-5 sm:w-8 h-[2px] bg-emerald-400"></span>
+            </div>
+            </div>
 
       {/* Content Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start relative z-10">
