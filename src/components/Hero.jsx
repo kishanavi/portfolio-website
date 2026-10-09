@@ -6,7 +6,7 @@ export default function Hero() {
   return (
   <section 
       id="home" 
-      className="sticky top-0 z-0 h-screen w-full bg-black text-white flex items-center justify-center pt-20 overflow-hidden"
+      className="sticky top-0 z-0 min-h-screen w-full bg-black text-white flex items-center justify-center pt-20 overflow-hidden"
     >
       {/* Particle Animation Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">

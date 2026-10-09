@@ -66,7 +66,7 @@ export default function Contact() {
   return (
 <section 
   id="contact" 
-  className="relative z-20 bg-[#050c08] text-white pt-32 pb-24 px-6 sm:px-12 lg:px-16 overflow-hidden min-h-screen"
+  className="relative z-20 isolate bg-[#050c08] text-white pt-32 pb-24 px-6 sm:px-12 lg:px-16 overflow-hidden min-h-screen"
 >
       {/* Background Emerald Ambient Glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/10 blur-[130px] rounded-full pointer-events-none"></div>
