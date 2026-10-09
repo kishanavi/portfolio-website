@@ -14,25 +14,20 @@ export default function Navbar() {
   ];
 
   // Smooth Scroll Handler Function (Safari Mobile Fix Included)
+// Smooth Scroll Handler Function (Safari Sticky Layout Fix)
   const handleNavClick = (e, href) => {
     e.preventDefault();
     setIsOpen(false);
-    
-    // Mobile Safari Animation Sync Fix
+
+    // Mobile Menu Close aana piraku Safari-il Scroll aaga 100ms Timeout
     setTimeout(() => {
       if (href === '#home') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         const element = document.querySelector(href);
         if (element) {
-          const navbarHeight = 80;
-          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-          const offsetPosition = elementPosition - navbarHeight;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
+          // Sticky Layout-il Exact Position-ukku Scroll seyya scrollIntoView
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       }
     }, 100);

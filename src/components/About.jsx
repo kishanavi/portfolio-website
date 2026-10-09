@@ -3,8 +3,11 @@ import aboutImg from '../assets/Tequila-Lime-Zinnias.jpeg'; // உங்கள�
 
 export default function About() {
   return (
-    <section id="about" className="relative z-10 min-h-screen bg-zinc-950 text-white py-20 px-6 sm:px-12 lg:px-20 flex items-center">
-      <div className="max-w-7xl mx-auto w-full">
+   <section 
+  id="about" 
+  className="relative z-20 isolate scroll-mt-20 min-h-screen bg-zinc-950 text-white py-20 px-6 sm:px-12 lg:px-20 flex items-center"
+>
+  <div className="max-w-7xl mx-auto w-full">
         
         {/* Main Grid: Left Photo | Right Details */}
         {/* Section Title Block (Screenshot Model) */}
