@@ -28,10 +28,7 @@ export default function Projects() {
   ];
 
   return (
-    <section 
-      id="projects" 
-      className="relative bg-zinc-950 text-white pt-16 pb-12 px-6 sm:px-12 lg:px-16 scroll-mt-20 border-t border-emerald-950/40"
-    >
+<section id="projects" className="relative z-20 isolate bg-zinc-950 text-white pt-10 pb-20 px-6 sm:px-12 lg:px-16 border-t border-emerald-950/40">
       {/* Top Header: my projects */}
         {/* Top Header with Watermark Text */}
    <div className="relative flex flex-col items-center justify-center mb-10 text-center">

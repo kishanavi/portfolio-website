@@ -51,8 +51,7 @@ export default function Skills() {
 
   return (
     // Background color swapped to zinc-950 (Greyish Black)
-    <section id="skills" className="relative z-10 bg-zinc-950 text-white py-20 px-6 sm:px-12 lg:px-20 overflow-hidden">
-     
+<section id="skills" className="relative z-20 isolate min-h-screen bg-zinc-950 text-white pt-10 pb-20 px-6 sm:px-12 lg:px-20 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full">
         
         {/* Title Section */}

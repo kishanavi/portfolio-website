@@ -13,25 +13,30 @@ export default function Navbar() {
     { name: 'Contact', href: '#contact' },
   ];
 
-  // Smooth Scroll Handler Function (Safari Mobile Fix Included)
-// Smooth Scroll Handler Function (Safari Sticky Layout Fix)
-  const handleNavClick = (e, href) => {
-    e.preventDefault();
-    setIsOpen(false);
+// Smooth Scroll Handler Function with Pixel-Perfect Offset Calculation
+const handleNavClick = (e, href) => {
+  e.preventDefault();
+  setIsOpen(false);
 
-    // Mobile Menu Close aana piraku Safari-il Scroll aaga 100ms Timeout
-    setTimeout(() => {
-      if (href === '#home') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        const element = document.querySelector(href);
-        if (element) {
-          // Sticky Layout-il Exact Position-ukku Scroll seyya scrollIntoView
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+  setTimeout(() => {
+    if (href === '#home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        // Navbar Height 80px + 20px extra spacing for perfect title view
+        const navbarOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navbarOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
       }
-    }, 100);
-  };
+    }
+  }, 100);
+};
 
   return (
     <>
